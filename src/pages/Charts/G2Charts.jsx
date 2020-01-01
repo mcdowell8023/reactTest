@@ -42,7 +42,7 @@ export default class G2G2Charts extends React.Component{
     dv.transform({
       type: 'filter',
       callback(row) {
-        console.log(row,'row---')
+        // console.log(row,'row---')
         const num = row.sold;
         return num <= ds.state.max && num >= ds.state.min;
       }

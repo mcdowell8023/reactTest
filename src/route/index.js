@@ -4,6 +4,8 @@ import React from 'react';
 import { Redirect } from "react-router-dom";
 import Main from '../component/Main';
 
+import Home from '../pages/Home/index';
+
 import BizCharts from '../pages/Charts/BizCharts';
 import G2Charts from '../pages/Charts/G2Charts';
 
@@ -43,7 +45,7 @@ const routers= [
     path: "/",
     exact: true,
     name:'这是主页',
-    component: () => <h2>Home</h2>
+    component: () => <Home />
   },
   {
     path: "/charts",
