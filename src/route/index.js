@@ -11,6 +11,8 @@ import G2Charts from '../pages/Charts/G2Charts';
 
 import Study1 from '../pages/Study/Study1';
 import Study2 from '../pages/Study/Study2';
+import Study3 from '../pages/Study/Study3';
+
 
 
 import Error from '../pages/Error';
@@ -84,7 +86,13 @@ const routers= [
         path: "/study/2",
         name:'学习2',
         component: () => <Study2/>,
+      },
+      {
+        path: "/study/3",
+        name:'学习3',
+        component: () => <Study3/>,
       }
+
     ]
   },
   {
