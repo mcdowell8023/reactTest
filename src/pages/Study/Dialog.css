@@ -1,0 +1,14 @@
+.Dialog{
+  background: red;
+  padding: 20px 30px;
+  margin-top: 10px;
+  color: #fff;
+}
+.text-center{
+  text-align: center;
+}
+
+.dialog-btn{
+  text-align: center;
+  padding: 20px 30px;
+}

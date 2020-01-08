@@ -12,6 +12,13 @@ import G2Charts from '../pages/Charts/G2Charts';
 import Study1 from '../pages/Study/Study1';
 import Study2 from '../pages/Study/Study2';
 import Study3 from '../pages/Study/Study3';
+import Study4 from '../pages/Study/Study4';
+import Study5 from '../pages/Study/Study5';
+import Study6 from '../pages/Study/Study6';
+import Study7 from '../pages/Study/Study7';
+import Study8 from '../pages/Study/Study8';
+import Study9 from '../pages/Study/Study9';
+
 
 
 
@@ -91,6 +98,36 @@ const routers= [
         path: "/study/3",
         name:'学习3',
         component: () => <Study3/>,
+      },
+      {
+        path: "/study/4",
+        name:'学习4',
+        component: () => <Study4/>,
+      },
+      {
+        path: "/study/5",
+        name:'学习5',
+        component: () => <Study5/>,
+      },
+      {
+        path: "/study/6",
+        name:'学习6',
+        component: () => <Study6/>,
+      },
+      {
+        path: "/study/7",
+        name:'学习7',
+        component: () => <Study7/>,
+      },
+      {
+        path: "/study/8",
+        name:'学习8',
+        component: () => <Study8/>,
+      },
+      {
+        path: "/study/9",
+        name:'学习9',
+        component: () => <Study9/>,
       }
 
     ]

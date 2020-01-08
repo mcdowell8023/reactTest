@@ -2,7 +2,7 @@
  * @Author: mcdowell
  * @Date: 2019-12-27 19:33:35
  * @LastEditors  : mcdowell
- * @LastEditTime : 2019-12-30 22:22:11
+ * @LastEditTime : 2020-01-07 17:12:20
  */
 
 import React from 'react';
@@ -53,6 +53,11 @@ export default class Study2 extends React.Component{
         <h1>State & 生命周期:</h1>
         <h2>clock 组件</h2>
         <Clock/>
+
+        <br/>
+        <div>
+        props 是传递给组件的（类似于函数的形参），而 state 是在组件内被组件自己管理的（类似于在一个函数内声明的变量）。
+        </div>
       </div>
     )
 

@@ -2,7 +2,7 @@
  * @Author: mcdowell
  * @Date: 2019-12-27 19:33:35
  * @LastEditors  : mcdowell
- * @LastEditTime : 2020-01-02 20:13:22
+ * @LastEditTime : 2020-01-03 19:23:49
  */
 
 import React from 'react';
@@ -25,10 +25,12 @@ class TestBtn extends React.Component{
   }
 
   clickAdd = (e) =>{
+    e.preventDefault();
     console.log(11)
     this.setState((state)=>({num1:state.num1+1}))
   }
   clickReduce (e){
+    e.preventDefault();
     console.log(22)
     this.setState((state)=>({num2:state.num2-1}))
   }
