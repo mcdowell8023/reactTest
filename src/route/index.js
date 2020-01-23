@@ -1,10 +1,11 @@
 
-import React from 'react';
+import React,{ lazy } from 'react';
 
 import { Redirect } from "react-router-dom";
 import Main from '../component/Main';
 
 import Home from '../pages/Home/index';
+import Error from '../pages/Error';
 
 import BizCharts from '../pages/Charts/BizCharts';
 import G2Charts from '../pages/Charts/G2Charts';
@@ -19,10 +20,17 @@ import Study7 from '../pages/Study/Study7';
 import Study8 from '../pages/Study/Study8';
 import Study9 from '../pages/Study/Study9';
 
+// react lazy 懒加载
+// import Advanced1 from '../pages/Advanced/1';
+const Advanced1 = lazy(()=>import('../pages/Advanced/1'));
+// import Advanced2 from '../pages/Advanced/2';
+const Advanced2 = lazy(()=>import('../pages/Advanced/2'));
+const Advanced3 = lazy(()=>import('../pages/Advanced/3'));
 
 
 
-import Error from '../pages/Error';
+
+
 
 const getRouteChildren = (props,routers)=>{
   const { match }=props;
@@ -129,7 +137,30 @@ const routers= [
         name:'学习9',
         component: () => <Study9/>,
       }
-
+    ]
+  },
+  {
+    path: "/Advanced",
+    name:'高级进阶',
+    component: (props)=> {
+      return setRouteView(props,'/Advanced/1');
+    },
+    children:[
+      {
+        path: "/Advanced/1",
+        name:'无障碍',
+        component: () => <Advanced1/>,
+      },
+      {
+        path: "/Advanced/2",
+        name:'分割代码',
+        component: () => <Advanced2/>,
+      },
+      {
+        path: "/Advanced/3",
+        name:'context',
+        component: () => <Advanced3/>,
+      }
     ]
   },
   {

@@ -1,0 +1,1 @@
+export { Test1 as default } from '../component/CommonComponent'; 
