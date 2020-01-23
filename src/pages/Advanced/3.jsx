@@ -2,7 +2,7 @@
  * @Author: mcdowell
  * @Date: 2020-01-17 11:37:58
  * @LastEditors  : mcdowell
- * @LastEditTime : 2020-01-22 14:01:23
+ * @LastEditTime : 2020-01-23 08:16:01
  */
 // eslint-disable-next-line 
 import React from 'react';
@@ -111,6 +111,8 @@ export default class  CodeDivision extends React.Component {
         <p>无需 context 的解决方案是将 最终组件 自身传递下去，因而中间组件无需知道 最终组件的props</p>
 
         <Page theme="smallBlue" title="这是测试标题" info="测试副标题"/>
+
+        <h2></h2>
         
     </div>)
   }
